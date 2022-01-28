@@ -1,26 +1,14 @@
-const { v4: uuid } = require('uuid');
+import { getUserData } from '../utils/getUserData';
 
 it('successfully signs up using confirmation code sent via email', () => {
-  const username = uuid();
   const mailsaurServerId = Cypress.env('MAILOSAUR_SERVER_ID');
-
-  const emailAddress = `${username}@${mailsaurServerId}.mailosaur.net`;
-  const password = Cypress.env('USER_PASSWORD');
+  const { email, password } = getUserData({ mailsaurServerId });
 
   cy.intercept('GET', '**/notes').as('getNotes');
-
-  cy.visit('/signup');
-
-  cy.get('#email').type(emailAddress);
-  cy.get('#password').type(password, { log: false });
-  cy.get('#confirmPassword').type(password, { log: false });
-
-  cy.contains('button', 'Signup').click();
-
-  cy.get('#confirmationCode').should('be.visible');
+  cy.fillSignupFormAndSubmit({ email, password });
 
   const options = {
-    sentTo: emailAddress,
+    sentTo: email,
   };
 
   function resolvePromise(message) {

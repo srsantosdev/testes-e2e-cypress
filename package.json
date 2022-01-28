@@ -17,6 +17,7 @@
   },
   "scripts": {
     "lint": "eslint cypress/**/*.js",
-    "lint:fix": "eslint cypress/**/*.js --fix"
+    "lint:fix": "eslint cypress/**/*.js --fix",
+    "e2e:run": "cypress run"
   }
 }
