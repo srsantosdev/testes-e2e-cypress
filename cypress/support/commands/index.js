@@ -1,5 +1,5 @@
-import { fillLoginFormAndSubmit } from './functions/fillLoginFormAndSubmit';
+import { login } from './functions/login';
 import { fillSignupFormAndSubmit } from './functions/fillSignupFormAndSubmit';
 
 Cypress.Commands.add('fillSignupFormAndSubmit', fillSignupFormAndSubmit);
-Cypress.Commands.add('fillLoginFormAndSubmit', fillLoginFormAndSubmit);
+Cypress.Commands.add('login', login);
