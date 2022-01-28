@@ -1,0 +1,18 @@
+{
+  "name": "testes-e2e-cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Samuel Ramos <samuelsantos7@yahoo.com.br>",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^9.3.1",
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-import": "^2.25.4"
+  },
+  "scripts": {
+    "lint": "eslint cypress/**/*.js",
+    "lint:fix": "eslint cypress/**/*.js --fix"
+  }
+}
