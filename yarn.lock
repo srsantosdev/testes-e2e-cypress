@@ -400,6 +400,11 @@ cross-spawn@^7.0.0, cross-spawn@^7.0.2:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
+cypress-mailosaur@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/cypress-mailosaur/-/cypress-mailosaur-2.6.0.tgz#325f89f428bf2306be04d73d760283eb5a83edf8"
+  integrity sha512-hRmsfb2SuCbv8af5zvpkaLQgbZQ3jcBEuVTSGQi6szc3o2byhPhGLgjn7MZJaIb/U1dEsO5zLj8rXzSDLDQmQA==
+
 cypress@^9.3.1:
   version "9.3.1"
   resolved "https://registry.yarnpkg.com/cypress/-/cypress-9.3.1.tgz#8116f52d49d6daf90a91e88f3eafd940234d2958"
