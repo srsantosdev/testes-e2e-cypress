@@ -12,6 +12,8 @@
     "eslint-plugin-import": "^2.25.4"
   },
   "dependencies": {
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
     "cypress-mailosaur": "^2.6.0",
     "faker": "5.5.3",
     "uuid": "^8.3.2"
